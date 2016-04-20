@@ -1,7 +1,9 @@
 package com.madriddespierto.app.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import com.madriddespierto.app.R;
 
 /**
@@ -21,5 +23,14 @@ public class ShareUtils {
     share.putExtra(Intent.EXTRA_TEXT, url);
 
     context.startActivity( Intent.createChooser(share,  context.getString(R.string.title_share_dialog)));
+  }
+
+  public static void openUrl(Activity activity, String url) {
+    //if (AdvancedWebView.Browsers.hasAlternative(activity)) {
+    //  AdvancedWebView.Browsers.openUrl(activity, urlFacebookProfile);
+    //}
+    final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    activity.startActivity(intent);
   }
 }

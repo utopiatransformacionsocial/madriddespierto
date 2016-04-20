@@ -8,4 +8,10 @@
   <string name="action_settings">Settings</string>
   <string name="subject_text_share">Mira lo que he visto através de Madrid Despierto</string>
   <string name="title_share_dialog">Compartir através de</string>
+  <string name="title_header_home">Colectivo Nadie</string>
+  <string name="subtitle_header_home">colectivonadie@madriddespierto.com</string>
+  <string name="info">Información</string>
+  <string name="share_app">Compartir app</string>
+  <string name="rate_app">Valorar app</string>
+  <string name="about">Sobre nosotros</string>
 </resources>
