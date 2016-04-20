@@ -14,4 +14,7 @@
   <string name="share_app">Compartir app</string>
   <string name="rate_app">Valorar app</string>
   <string name="about">Sobre nosotros</string>
+  <string name="title_share_app">Mira la aplicación de Madrid Despierta</string>
+  <string name="content_share_app">Puedes descargarla aquí:</string>
+  <string name="link_app_play_store">https://play.google.com/store/apps/details?id=com.wMadridDespierto</string>
 </resources>

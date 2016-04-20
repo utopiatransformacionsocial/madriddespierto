@@ -5,7 +5,7 @@ android {
   buildToolsVersion "23.0.3"
 
   defaultConfig {
-    applicationId "com.madriddespierto.app"
+    applicationId "com.wMadridDespierto"
     minSdkVersion 17
     targetSdkVersion 23
     versionCode 1

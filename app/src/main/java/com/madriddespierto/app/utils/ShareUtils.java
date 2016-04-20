@@ -14,21 +14,24 @@ public class ShareUtils {
   public static void shareText(Context context, String url) {
     Intent share = new Intent(android.content.Intent.ACTION_SEND);
     share.setType("text/plain");
-    //share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
     share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-
-    // Add data to the intent, the receiving app will decide
-    // what to do with it.
     share.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.subject_text_share));
     share.putExtra(Intent.EXTRA_TEXT, url);
 
     context.startActivity( Intent.createChooser(share,  context.getString(R.string.title_share_dialog)));
   }
 
+  public static void shareTitleAndText(Context context,String title, String text) {
+    Intent share = new Intent(android.content.Intent.ACTION_SEND);
+    share.setType("text/plain");
+    share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+    share.putExtra(Intent.EXTRA_SUBJECT, title);
+    share.putExtra(Intent.EXTRA_TEXT, text);
+
+    context.startActivity( Intent.createChooser(share,  context.getString(R.string.title_share_dialog)));
+  }
+
   public static void openUrl(Activity activity, String url) {
-    //if (AdvancedWebView.Browsers.hasAlternative(activity)) {
-    //  AdvancedWebView.Browsers.openUrl(activity, urlFacebookProfile);
-    //}
     final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     activity.startActivity(intent);

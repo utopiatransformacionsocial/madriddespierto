@@ -2,6 +2,7 @@ package com.madriddespierto.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -102,16 +104,34 @@ public class HomeActivity extends AppCompatActivity
     int id = item.getItemId();
 
      if (id == R.id.nav_about) {
-
+       showAboutView();
     } else if (id == R.id.nav_share) {
-
+       shareApp();
     } else if (id == R.id.nav_rate) {
-
+       rateApp();
     }
 
     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
     drawer.closeDrawer(GravityCompat.START);
     return true;
+  }
+
+  private void showAboutView() {
+    Toast.makeText(HomeActivity.this, "Not implement :(", Toast.LENGTH_SHORT).show();
+  }
+
+  private void shareApp() {
+    ShareUtils.shareTitleAndText( HomeActivity.this, getString(R.string.title_share_app),
+        getString(R.string.content_share_app) + " " +  getString(R.string.link_app_play_store) );
+  }
+
+  private void rateApp() {
+    final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+    try {
+      startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+    } catch (android.content.ActivityNotFoundException anfe) {
+      startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
+    }
   }
 
   public static void startActivity(Activity activity) {
