@@ -28,4 +28,6 @@ dependencies {
   compile 'com.android.support:design:23.3.0'
   compile 'com.github.delight-im:Android-AdvancedWebView:v2.1.0'
   compile 'com.android.support:support-v4:23.3.0'
+  compile 'com.jakewharton:butterknife:7.0.1'
+
 }

@@ -3,6 +3,7 @@ package com.madriddespierto.app;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import com.madriddespierto.app.common.Constants;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -14,6 +15,6 @@ public class SplashActivity extends AppCompatActivity {
       @Override public void run() {
         HomeActivity.startActivity(SplashActivity.this);
       }
-    }, 2000);
+    }, Constants.SPLASH_DELAY_TIME);
   }
 }

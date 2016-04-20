@@ -2,12 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.madriddespierto.com.madriddespierto.WebFragment">
-
+    tools:context="com.madriddespierto.app.WebFragment">
 
   <im.delight.android.webview.AdvancedWebView
       android:id="@+id/webview"
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
+
+
+  <ProgressBar
+      android:id="@+id/progress_bar"
+      android:layout_width="match_parent"
+      android:layout_height="10dp"
+      style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+      android:indeterminate="true"
+      />
 
 </FrameLayout>
