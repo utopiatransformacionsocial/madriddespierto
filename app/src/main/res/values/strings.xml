@@ -6,15 +6,31 @@
   <string name="navigation_drawer_close">Close navigation drawer</string>
 
   <string name="action_settings">Settings</string>
-  <string name="subject_text_share">Mira lo que he visto através de Madrid Despierto</string>
-  <string name="title_share_dialog">Compartir através de</string>
-  <string name="title_header_home">Colectivo Nadie</string>
-  <string name="subtitle_header_home">colectivonadie@madriddespierto.com</string>
+  <string name="subject_text_share">Mira lo que he visto a través de Madrid Despierto</string>
+  <string name="title_share_dialog">Compartir esto a través de:</string>
+  <string name="title_header_home">Utopía Transformación Social</string>
+
+  <string name="email_contact">utopiatransformacionsocial@gmail.com</string>
+
+  <string name="subtitle_header_home">@string/email_contact</string>
   <string name="info">Información</string>
   <string name="share_app">Compartir app</string>
   <string name="rate_app">Valorar app</string>
   <string name="about">Sobre nosotros</string>
-  <string name="title_share_app">Mira la aplicación de Madrid Despierta</string>
+  <string name="title_share_app">Mira la aplicación de Madrid Despierto</string>
   <string name="content_share_app">Puedes descargarla aquí:</string>
   <string name="link_app_play_store">https://play.google.com/store/apps/details?id=com.wMadridDespierto</string>
+  <string name="title_activity_about">AboutActivity</string>
+  <string name="content_about">Madrid Despierto es una agenda que recopila todos aquellos eventos que se dan en la ciudad de Madrid o alrededores y que tienen una relación con la transformación social y con la construcción de un mundo nuevo.
+    \n \n Madrid Despierto no genera ningún tipo de contenido ni tiene vinculación con los eventos que recoge. \n \n
+    Todo lo que publicamos lo encontramos en la web, y por tanto,  es diseñado y redactado por la organización de las actividades.\n \n
+    Cualquier cambio o modificación de un evento no depende de nosotras, si no del colectivo organizador.
+    \n \n Si quieres que tu evento aparezca aquí, lo único que tienes que hacer, es pasarnos tu web y tenerla actualizada.
+    \n \n Nosotras nos encargamos del resto.
+    \n Esperamos que Madrid Despierto nos ayude a encontrarnos en los centros sociales, las asambleas, los foros y las calles.
+    \n Organizadas somos más fuertes.</string>
+  <string name="contact_us">Contacta con nosotros</string>
+  <string name="facebook_contact">utopiatransformacionsocial</string>
+  <string name="twitter_contact">MadridDespierto</string><!-- || \@utop1a_-->
+  <string name="github_id">utopiatransformacionsocial</string>
 </resources>

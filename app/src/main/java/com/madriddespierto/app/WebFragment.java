@@ -113,4 +113,13 @@ public class WebFragment extends Fragment implements AdvancedWebView.Listener {
   public void shareCurrentURL() {
     ShareUtils.shareText(getActivity(), mWebview.getUrl());
   }
+
+  public boolean onBack() {
+    if (mWebview.canGoBack()) {
+      mWebview.goBack();
+      return true;
+    }else{
+      return false;
+    }
+  }
 }

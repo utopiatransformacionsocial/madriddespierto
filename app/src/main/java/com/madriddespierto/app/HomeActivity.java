@@ -69,8 +69,8 @@ public class HomeActivity extends AppCompatActivity
   private void initDrawer() {
     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
     ActionBarDrawerToggle toggle =
-        new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open,
-            R.string.navigation_drawer_close);
+        new ActionBarDrawerToggle(this, drawer, toolbar, R.string.app_name,
+            R.string.app_name);
     drawer.setDrawerListener(toggle);
     toggle.syncState();
   }
@@ -80,7 +80,16 @@ public class HomeActivity extends AppCompatActivity
     if (drawer.isDrawerOpen(GravityCompat.START)) {
       drawer.closeDrawer(GravityCompat.START);
     } else {
-      super.onBackPressed();
+
+      WebFragment mWebFragment = (WebFragment)getFragmentManager().findFragmentByTag("WebFragment");
+
+      if (mWebFragment!=null && mWebFragment instanceof WebFragment) {
+        if (!((WebFragment) mWebFragment).onBack()) {
+          super.onBackPressed();
+        }
+      }else{
+        super.onBackPressed();
+      }
     }
   }
 
@@ -117,7 +126,7 @@ public class HomeActivity extends AppCompatActivity
   }
 
   private void showAboutView() {
-    Toast.makeText(HomeActivity.this, "Not implement :(", Toast.LENGTH_SHORT).show();
+    AboutActivity.startActivity(this);
   }
 
   private void shareApp() {
