@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Android-AdvancedWebView-v2.1.0">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.delight-im/Android-AdvancedWebView/v2.1.0/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.delight-im/Android-AdvancedWebView/v2.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/MadridDespiertoApp/build/intermediates/exploded-aar/com.github.delight-im/Android-AdvancedWebView/v2.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/MadridDespiertoApp/build/intermediates/exploded-aar/com.github.delight-im/Android-AdvancedWebView/v2.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
